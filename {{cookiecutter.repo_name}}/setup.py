@@ -31,8 +31,9 @@ class PyTest(TestCommand):
 
 
 readme = open('README.rst').read()
-doclink = """Documentation
--------------
+doclink = """
+Documentation
+=============
 
 The full documentation is at http://{{ cookiecutter.repo_name }}.rtfd.org."""
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
