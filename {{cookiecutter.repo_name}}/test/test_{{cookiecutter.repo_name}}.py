@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
 test_{{ cookiecutter.repo_name }}
 ------------
@@ -8,23 +5,20 @@ test_{{ cookiecutter.repo_name }}
 Tests for `{{ cookiecutter.repo_name }}` module.
 """
 
-import os
-import shutil
-import unittest
+import pytest
 
 from {{ cookiecutter.repo_name }} import {{ cookiecutter.repo_name }}
 
 
-class Test{{ cookiecutter.repo_name|capitalize }}(unittest.TestCase):
+class Test{{ cookiecutter.repo_name|capitalize }}(object):
 
-    def setUp(self):
+    @classmethod
+    def setup_class(cls):
         pass
 
     def test_something(self):
         pass
 
-    def tearDown(self):
+    @classmethod
+    def teardown_class(cls):
         pass
-
-if __name__ == '__main__':
-    unittest.main()
