@@ -14,16 +14,6 @@
 
 {{ cookiecutter.project_short_description}}
 
-Quickstart
-----------
-
-Install {{ cookiecutter.project_name }}::
-
-    $ pip install {{ cookiecutter.repo_name }}
-
-Then use it in a project::
-
-	import {{ cookiecutter.repo_name }}
 
 Features
 --------
