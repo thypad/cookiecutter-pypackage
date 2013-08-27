@@ -40,7 +40,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='{{ cookiecutter.repo_name }}',
-    version={{ cookiecutter.version }},
+    version='{{ cookiecutter.version }}',
     description='{{ cookiecutter.project_short_description }}',
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='{{ cookiecutter.full_name }}',
