@@ -1,4 +1,4 @@
-.PHONY: clean-pyc clean-build docs
+.PHONY: help clean clean-pyc clean-build list test test-all coverage docs release sdist
 
 help:
 	@echo "clean-build - remove build artifacts"
@@ -24,10 +24,10 @@ clean-pyc:
 	find . -name '*~' -exec rm -f {} +
 
 lint:
-	flake8 {{ cookiecutter.repo_name }} tests
+	flake8 {{ cookiecutter.repo_name }} test
 
 test:
-	python setup.py test
+	py.test
 
 test-all:
 	tox
